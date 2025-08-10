@@ -9,6 +9,8 @@
     pkgs.neovim
   ];
 
+  programs.home-manager.enable = true;
+
   programs.kitty = {
     enable = true;
     extraConfig = ''
@@ -22,5 +24,5 @@
     initContent = builtins.readFile ./configs/zsh/.zshrc;
   };
 
-  xdg.configFile."nvim".source = ./nvim;
+  xdg.configFile."nvim".source = ./configs/nvim;
 }
