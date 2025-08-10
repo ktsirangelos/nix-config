@@ -25,4 +25,5 @@
   };
 
   xdg.configFile."nvim".source = ./configs/nvim;
+  home.file.".aerospace.toml".source = ./configs/aerospace/aerospace.toml;
 }
