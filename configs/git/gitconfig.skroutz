@@ -1,0 +1,4 @@
+[user]
+	email = ktsirangelos@skroutz.gr
+[alias]
+	testme = push origin -f HEAD:jenkins/ktsirangelos

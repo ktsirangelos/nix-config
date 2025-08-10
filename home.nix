@@ -26,4 +26,6 @@
 
   xdg.configFile."nvim".source = ./configs/nvim;
   home.file.".aerospace.toml".source = ./configs/aerospace/aerospace.toml;
+  home.file.".gitconfig".source = ./configs/git/gitconfig;
+  home.file.".gitconfig.skroutz".source = ./configs/git/gitconfig.skroutz;
 }
