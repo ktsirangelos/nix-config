@@ -1,0 +1,17 @@
+return {
+  { "folke/trouble.nvim", enabled = false },
+  { "folke/ts-comments.nvim", enabled = false },
+  { "folke/noice.nvim", enabled = false },
+  { "folke/flash.nvim", enabled = false },
+  { "folke/tokyonight.nvim", enabled = false },
+  { "folke/persistence.nvim", enabled = false },
+  { "catppuccin/catppuccin", enabled = false },
+  { "lukas-reineke/headlines.nvim", enabled = false },
+  { "echasnovski/mini.ai", enabled = false },
+  { "echasnovski/mini.pairs", enabled = false },
+  { "echasnovski/mini.icons", enabled = false },
+  { "akinsho/bufferline.nvim", enabled = false },
+  { "rcarriga/nvim-notify", enabled = false },
+  { "MagicDuck/grug-far.nvim", enabled = false },
+  { "rafamadriz/friendly-snippets", enabled = false },
+}
