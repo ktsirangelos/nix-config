@@ -26,6 +26,7 @@
     pkgs.libpq
     pkgs.neovim
     pkgs.openssl
+    pkgs.openssl.dev
     pkgs.php83Packages.php-cs-fixer
     pkgs.pkg-config
     pkgs.postgresql_17
@@ -47,6 +48,8 @@
     pkgs.file
     pkgs.yarn
     pkgs.gmp
+    pkgs.libyaml
+    pkgs.libyaml.dev
   ];
 
   programs.home-manager.enable = true;
