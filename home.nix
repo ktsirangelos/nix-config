@@ -36,7 +36,11 @@
     pkgs.sqlite
     pkgs.tig
     pkgs.tree
+    pkgs.nodejs_22
     pkgs.nodePackages.typescript
+    pkgs.nodePackages.typescript-language-server
+    pkgs.nodePackages.vscode-langservers-extracted
+    pkgs.gh-copilot
     pkgs.viu
     pkgs.wdiff
     pkgs.wget
