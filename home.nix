@@ -46,6 +46,7 @@
     pkgs.wget
     pkgs.file
     pkgs.yarn
+    pkgs.gmp
   ];
 
   programs.home-manager.enable = true;
