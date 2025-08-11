@@ -30,6 +30,7 @@
     pkgs.php83Packages.php-cs-fixer
     pkgs.pkg-config
     pkgs.postgresql_17
+    pkgs.mariadb-connector-c
     pkgs.prettierd
     pkgs.rbenv
     pkgs.redis
@@ -46,7 +47,8 @@
     pkgs.wdiff
     pkgs.wget
     pkgs.file
-    pkgs.yarn
+    pkgs.file.dev
+    (pkgs.yarn.override { nodejs = pkgs.nodejs_20; })
     pkgs.gmp
     pkgs.libyaml
     pkgs.libyaml.dev

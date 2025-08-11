@@ -5,6 +5,9 @@ if [ -e "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh" ]; then
   . "/nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh"
 fi
 
+export PATH="$HOME/.nix-profile/bin:$PATH"
+export PATH="$HOME/.nix-profile/sbin:$PATH"
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -194,3 +197,6 @@ alias rupd="ssh dev.yogurt.devspace -t 'bundle install && yarn install'"
 #
 eval "$(rbenv init - zsh)"
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
+export PKG_CONFIG_PATH="$HOME/.nix-profile/lib/pkgconfig:$PKG_CONFIG_PATH"
+export LDFLAGS="-L$HOME/.nix-profile/lib $LDFLAGS"
+export CPPFLAGS="-I$HOME/.nix-profile/include $CPPFLAGS"
