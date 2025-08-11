@@ -181,22 +181,8 @@ alias gswc='git switch --create'
 
 alias delete_merged_branches='git branch --merged | egrep -v "(^\*|master)" | xargs git branch -d'
 
-# Skroutz
-alias stg="ssh -T wowbagger@vms.skroutz.gr"
-alias rconsole="ssh dev.yogurt.devspace -t 'bundle exec rails console'"
-alias rdebug="bundle exec rdbg -A 3001 -n"
-alias rlogs="devspace logs -f -c webserver"
-alias rlogsall="devspace logs -f"
-alias rssh="ssh dev.yogurt.devspace"
-alias rstop="devspace run-pipeline stop-dev"
-alias rrestart="devspace run-pipeline stop-dev && devspace dev"
-alias rbi="ssh dev.yogurt.devspace -t 'bundle install'"
-alias ryi="ssh dev.yogurt.devspace -t 'yarn install'"
-alias rupd="ssh dev.yogurt.devspace -t 'bundle install && yarn install'"
-
 #
 eval "$(rbenv init - zsh)"
-export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
 export PKG_CONFIG_PATH="$HOME/.nix-profile/lib/pkgconfig:$PKG_CONFIG_PATH"
 export LDFLAGS="-L$HOME/.nix-profile/lib $LDFLAGS"
 export CPPFLAGS="-I$HOME/.nix-profile/include $CPPFLAGS"

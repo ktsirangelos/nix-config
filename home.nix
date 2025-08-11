@@ -23,13 +23,12 @@
     pkgs.lftp
     pkgs.libjpeg
     pkgs.libpng
-    pkgs.libpq
     pkgs.neovim
     pkgs.openssl
     pkgs.openssl.dev
     pkgs.php83Packages.php-cs-fixer
     pkgs.pkg-config
-    pkgs.postgresql_17
+    pkgs.postgresql
     pkgs.mariadb-connector-c
     pkgs.prettierd
     pkgs.rbenv
@@ -52,6 +51,11 @@
     pkgs.gmp
     pkgs.libyaml
     pkgs.libyaml.dev
+    pkgs.readline
+    pkgs.zlib
+    pkgs.zlib.dev
+    pkgs.libiconv
+    pkgs.krb5
   ] ++ (if pkgs.stdenv.isDarwin then [
     pkgs.aerospace
   ] else [ ]);
@@ -73,7 +77,7 @@
 
   xdg.configFile."nvim".source = ./configs/nvim;
 
-  home.file.".aerospace.toml".source = ./configs/aerospace/aerospace.toml;
   home.file.".gitconfig".source = ./configs/git/gitconfig;
   home.file.".gitconfig.skroutz".source = ./configs/git/gitconfig.skroutz;
+  home.file.".aerospace.toml".source = ./configs/aerospace/aerospace.toml;
 }
