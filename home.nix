@@ -52,7 +52,9 @@
     pkgs.gmp
     pkgs.libyaml
     pkgs.libyaml.dev
-  ];
+  ] ++ (if pkgs.stdenv.isDarwin then [
+    pkgs.aerospace
+  ] else [ ]);
 
   programs.home-manager.enable = true;
 
