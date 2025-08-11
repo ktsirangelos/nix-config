@@ -45,6 +45,7 @@
     pkgs.wdiff
     pkgs.wget
     pkgs.file
+    pkgs.yarn
   ];
 
   programs.home-manager.enable = true;

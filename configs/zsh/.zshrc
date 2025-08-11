@@ -194,4 +194,3 @@ alias rupd="ssh dev.yogurt.devspace -t 'bundle install && yarn install'"
 #
 eval "$(rbenv init - zsh)"
 export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"
-export PATH="$HOME/.yarn/bin:$PATH"
